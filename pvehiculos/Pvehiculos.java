@@ -183,6 +183,12 @@ public class Pvehiculos {
         System.out.println(clientes);*/
         em.close();
         emf.close();
+        mongoC.close();
+        try{
+            conxOrcl.close();
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
     }
     
 }
